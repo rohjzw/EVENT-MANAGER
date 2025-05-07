@@ -2,12 +2,9 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./calendar.css">
-
 </head>
 
 <body>
-
     <div class="topbar">
         <button>MERCANTEC</button>
         <div class="notification">
@@ -27,19 +24,24 @@
             <a href="myProfile.php">MY PROFILE</a>
         </div>
 
-        <div class="mainContainerGroups">
-            <div class="divGroups">
-                <div class="headerDiv">
-                    <div class="headerDot"></div>
-                </div>
-
-                <div class="bottomDiv">
-                    <div class="groupLabel"></div>
-                    <div class="groupLabel"></div>
-                    <div class="groupLabel"></div>
-                </div>
+        <div class="containerReset">
+            <div class="correo_usuario-container" id="correo_usuario-container">
             </div>
+            <form method="POST" action="registerUserDelMarc.php">
+                <div class="resetPasswordDiv">
+                    <label>New password:</label>
+                    <input type="text" name="Name" size="50" class="passwordResetTextbox" required>
+
+                    <label>Confirm password:</label>
+                    <input type="text" name="Email" size="50" class="passwordResetTextbox" required>
+
+                    <div class="resetButtonDiv">
+                        <input type="submit" class="resetButton" value="SUBMIT">
+                    </div>
+                </div>
+            </form>
         </div>
+
     </div>
     </div>
 </body>

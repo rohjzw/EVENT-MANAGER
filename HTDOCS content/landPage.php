@@ -2,7 +2,6 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="calendar.css">
 
 </head>
 
@@ -11,7 +10,9 @@
     <div class="topbar">
         <button>MERCANTEC</button>
         <div class="notification">
-            <div class="circle"></div>
+            <div class="circle">
+                <a href="invitations.php" class="invitationsButton"></a>
+            </div>
         </div>
     </div>
 
@@ -22,7 +23,7 @@
             <a href="myTasks.php">MY TASKS</a>
             <div style="flex-grow: 0.985;"></div>
             <a href="groups.php">GROUPS</a>
-            <a href="#">USERS</a>
+            <a href="myProfile.php">MY PROFILE</a>
         </div>
         <div class="main">
             <div class="section">
@@ -34,15 +35,14 @@
             <div class="section2">
                 <a href="calendarPage.php">
                     <button>CALENDAR</button>
-                </a>    
-            </div>       
-    </div>
+                </a>
+            </div>
+        </div>
     </div>
 
 </body>
 <script>
-    function handleDayClick(date)
-    {
+    function handleDayClick(date) {
         // Redirige a la página deseada
         window.location.href = "tasklist.php?date=" + date;
     }
